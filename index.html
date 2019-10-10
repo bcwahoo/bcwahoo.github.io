@@ -6,58 +6,81 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
+  <!-- CSS Links -->
   <link rel="stylesheet" href="assets/css/foundation.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  
+  <!-- Movable Background JavaScript Links -->
+  <script src="assets/js/vendor/three.r92.min.js"></script>
+  <script src="assets/js/vendor/vanta.waves.min.js"></script>
+
+
 </head>
 
 <body>
-  <div class="title-bar">
-    <div class="title-bar-left">
-      <button class="menu-icon" type="button" data-open="offCanvasLeftOverlap"></button>
-      <span class="title-bar-title">Foundation title bar with top off-canvas</span>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/media/video.mp4" type="video/mp4">
+      </video>
+  
+    <div class="title-bar">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-open="offCanvasLeftOverlap"></button>
+        <span class="title-bar-title">Blessing C Productions</span>
+      </div>
     </div>
-  </div>
 
-  <div class="off-canvas-wrapper">
-    <div class="off-canvas position-left" id="offCanvasLeftOverlap" data-off-canvas data-transition="overlap">
-      <!-- Your menu or Off-canvas content goes here -->
-      <!-- Close button -->
-      <button class="close-button" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvasLeftOverlap" data-off-canvas data-transition="overlap">
+        <!-- Your menu or Off-canvas content goes here -->
+        <!-- Close button -->
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
 
-      <!-- Menu -->
-      <ul class="vertical menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Designs</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <!-- Menu -->
+        <ul class="vertical menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="off-canvas-content" data-off-canvas-content>
 
-    <!-- Your page content lives here -->
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
+<!--                Your page content lives here                 -->
+
+
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+        </div>
         <div class="large-12 cell">
           <h1>Welcome to Blessing C. Productions</h1>
         </div>
       </div>
 
     </div>
-  </div>
 
-
-
-
+    <div class="bkgrd-wrapper"></div>
 
   <script src="assets/js/vendor/jquery.js"></script>
   <script src="assets/js/vendor/what-input.js"></script>
   <script src="assets/js/vendor/foundation.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <!-- Background Script -->
+  <script>
+    VANTA.WAVES({
+      el: "#bkgrd-wrapper",
+      color: 0xd0f10,
+      shininess: 76.00,
+      waveHeight: 35.00,
+      waveSpeed: 0.50,
+      zoom: 0.70
+    })
+  </script>
 </body>
 
 </html>
